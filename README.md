@@ -17,3 +17,4 @@ Este repositório foi criado para documentar minha jornada de aprendizado com **
 - H2 / PostgreSQL
 - APIs RESTful
 
+## docker
