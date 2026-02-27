@@ -13,5 +13,5 @@ import com.devcaverna.hroauth.entities.User;
 public interface UserFeignClient {
 
 	@GetMapping(value = "/search")
-	ResponseEntity <User> findByEmail(@RequestParam String email);
+	ResponseEntity<User> findByEmail(@RequestParam String email);	
 }

@@ -13,7 +13,7 @@ import com.devcaverna.hroauth.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResources {
+public class UserResource {
 
 	@Autowired
 	private UserService service;
@@ -23,7 +23,8 @@ public class UserResources {
 		try {
 			User user = service.findByEmail(email);
 			return ResponseEntity.ok(user);
-		} catch (IllegalArgumentException e) {
+		}
+		catch (IllegalArgumentException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 	}
