@@ -1,0 +1,5 @@
+FROM eclipse-temurin:11-jdk
+VOLUME /tmp
+EXPOSE 8761
+ADD ./target/hr-worker-0.0.1-SNAPSHOT.jar hr-worker.jar
+ENTRYPOINT ["java","-jar","/hr-worker.jar"]
